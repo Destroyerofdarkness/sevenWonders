@@ -1,6 +1,8 @@
 body,html{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 5vw;
     flex-direction: column;
     width: 100%;
     background: var(--primary);
@@ -24,14 +26,56 @@ header nav a{
 display: flex;
 justify-content: center;
 width: 14vw;
+font-family: var(--font) ;
 background: var(--primary);
 padding: 1vw;
 border-radius: 1.2vw;
 font-size: 2vw;
 color: var(--secondary);
 text-decoration: none;
+font-weight: 400;
+}
+#zeus_1024x1024{
+    width: auto;
+    height: 30vw;
+
+}
+.description{
+    background: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 1vw;
+    border-radius: 1.2vw;
+    height: fit-content;
+}
+.description h1{
+    font-family: var(--font);
+    color: var(--primary);
+    font-size: 2vw;
+    font-weight: 400;
+}
+#zeus_1183x1600{
+    width: auto;
+    height: 40vw;
+}
+.description p{
+    font-family: var(--font);
+    color: var(--primary);
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+.bilderDesc{
+    display: flex;
+    flex-direction: column;
+}
+.bilderDesc p{
+ font-size: 1.5vw;
+ font-family: var(--font);
+ font-weight: 400;
 }
 :root{
     --primary:#BF8E14;
     --secondary:#001149;
+    --font: "Inria Serif", serif;
 }
