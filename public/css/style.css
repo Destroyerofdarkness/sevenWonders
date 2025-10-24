@@ -1,0 +1,37 @@
+body,html{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: var(--primary);
+    margin:0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    background: var(--secondary);
+    width: 100%;
+    height: fit-content;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding: 2vw;
+}
+header nav a{
+display: flex;
+justify-content: center;
+width: 14vw;
+background: var(--primary);
+padding: 1vw;
+border-radius: 1.2vw;
+font-size: 2vw;
+color: var(--secondary);
+text-decoration: none;
+}
+:root{
+    --primary:#BF8E14;
+    --secondary:#001149;
+}
