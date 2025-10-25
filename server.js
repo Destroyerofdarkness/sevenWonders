@@ -9,13 +9,16 @@ app.use(express.json())
 app.set("view engine", "ejs")
 
 app.get("/", (req,res)=>{
-    res.render("index", {name: "Hjem"})
+    res.redirect("/home")
 })
 app.get("/historie", (req,res)=>{
     res.render("historie", {name: "Historie"})
 })
 app.get("/bilder", (req,res)=>{
     res.render("bilder", {name: "Bilder"})
+})
+app.get("/home", (req,res)=>{
+    res.render("index", {name: "Hjem"})
 })
 
 app.listen(3000)
